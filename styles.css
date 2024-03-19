@@ -1,0 +1,133 @@
+/** @format */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.pricing-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.billing-options {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+.billing-title {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.segmented-control {
+    display: flex;
+    border: 1px solid #e1e1e1;
+    border-radius: 20px;
+}
+
+.segment {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 20px;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+input[type='radio']:checked + .segment {
+    background-color: #007bff;
+    color: white;
+}
+
+.pricing-card {
+    background: #ffffff;
+    border: 1px solid #e1e1e1;
+    padding: 1.5rem;
+    border-radius: 5px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pricing-card:focus,
+.pricing-card:hover {
+    border-color: #007bff;
+}
+
+.pricing-card h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    color: #007bff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.per-month {
+    font-size: 0.75rem;
+    color: #666;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button:hover,
+button:focus {
+    background-color: #0056b3;
+}
+
+.subtext {
+    margin-top: 0.5rem;
+    color: #666;
+    font-size: 0.875rem;
+}
+
+.subtext a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+button:focus {
+    outline: 3px solid #0056b3;
+}
+
+[tabindex='0']:focus {
+    outline: 2px dashed #0056b3;
+}
+
+/* You can add additional styles below if necessary */

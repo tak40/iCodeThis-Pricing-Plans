@@ -1,0 +1,62 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pricing Plans</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="billing-options">
+                <h4 class="billing-title">Billing Cycle</h4>
+                <div class="segmented-control">
+                    <input
+                        type="radio"
+                        name="billing-cycle"
+                        id="monthly"
+                        checked
+                        aria-label="Billed monthly"
+                    />
+                    <label for="monthly" class="segment">Billed Monthly</label>
+                    <input
+                        type="radio"
+                        name="billing-cycle"
+                        id="yearly"
+                        aria-label="Billed yearly"
+                    />
+                    <label for="yearly" class="segment">Billed Yearly</label>
+                </div>
+            </div>
+            <div class="pricing-container">
+                <div class="pricing-card" tabindex="0">
+                    <h3>For individuals</h3>
+                    <p class="price">
+                        <span aria-hidden="true">$</span>9.99
+                        <span class="per-month">/ month</span>
+                    </p>
+                    <button>Buy now</button>
+                </div>
+                <div class="pricing-card" tabindex="0">
+                    <h3>For families</h3>
+                    <p class="price">
+                        <span aria-hidden="true">$</span>16.99
+                        <span class="per-month">/ month</span>
+                    </p>
+                    <button>Buy now</button>
+                </div>
+                <div class="pricing-card" tabindex="0">
+                    <h3>For teams</h3>
+                    <p class="price">
+                        <span aria-hidden="true">$</span>16.58
+                        <span class="per-month">/ month</span>
+                    </p>
+                    <button>Try for free</button>
+                    <p class="subtext">or <a href="#">purchase now</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
